@@ -21,6 +21,12 @@ $this->params['breadcrumbs'][] = $this->title;
                        echo Html::a('Okunanlar', ['/kitap/okunankitap'], ['class'=>'btn btn-primary']);
                                 
                      }  ?>
+
+                     <?php if(Yii::$app->user->can('admin'))
+                     {
+                       echo Html::a('Kategori', ['/kitap/kategori'], ['class'=>'btn btn-primary']);
+                                
+                     }  ?>
                 
 
 
